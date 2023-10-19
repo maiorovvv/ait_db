@@ -26,7 +26,7 @@ COUNT(Orders.OrderID) AS count_orders
 FROM [Orders]
 LEFT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
 GROUP BY Employees.EmployeeID
-HAVING count_orders < 10
+HAVING count_orders < 15
 
 //С помощью инструмента онлайн-проектирования описать схему БД "онлайн-шахматы"
 https://dbdiagram.io/d/chess_game-652eec0fffbf5169f0e3fa77
